@@ -26,10 +26,127 @@
     <div class="container">
         <div class="row justify-content-start">
             <div class="col top-margin">
-                <p class="text-center animated pulse infinite">
-                    <img src="logo.jpg" alt="InvolveAfrica Logo" width="200px">
+                <p class="text-center animated pulse infinite top-margin">
+                    <img src="logo.jpg" alt="Involve Africa Logo" width="200px">
                 </p>
                 <p class="text-center kaushan" style="font-size: 200%;">An Evening With The Youths</p>
+            </div>
+        </div>
+        <!-- Form Body begins -->
+        <div class="row justify-content-center">
+            <form action="#" method="post" id="form" class="needs-validation bottom-margin" novalidate>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Your First Name" required>
+                        <div class="invalid-feedback">
+                            Please provide a Name.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <div class="col-md form-group">
+                        <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Your Last Name" required>
+                        <div class="invalid-feedback">
+                            Please provide a Name.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md form-group">
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid email address.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                        <small class="form-text text-muted">Kindly ensure that it is a current
+                            email.</small>
+                    </div>
+                    <div class="col-md form-group">
+                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Your phone Number" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid phone number.
+                        </div>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <legend class="col-form-label">Gender</legend>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" id="male" class="form-check-input" value="Male">
+                            <label for="male" class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input type="radio" name="gender" id="female" class="form-check-input" value="Female" required>
+                            <label for="female" class="form-check-label">Female</label>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">                      
+                        <label for="state">State of Residence</label>
+                        <select name="state" id="state" class="custom-select">
+                            <option value="" selected="selected">- Select -</option>
+                            <option value="Abuja FCT">Abuja FCT</option>
+                            <option value="Abia">Abia</option>
+                            <option value="Adamawa">Adamawa</option>
+                            <option value="Akwa Ibom">Akwa Ibom</option>
+                            <option value="Anambra">Anambra</option>
+                            <option value="Bauchi">Bauchi</option>
+                            <option value="Bayelsa">Bayelsa</option>
+                            <option value="Benue">Benue</option>
+                            <option value="Borno">Borno</option>
+                            <option value="Cross River">Cross River</option>
+                            <option value="Delta">Delta</option>
+                            <option value="Ebonyi">Ebonyi</option>
+                            <option value="Edo">Edo</option>
+                            <option value="Ekiti">Ekiti</option>
+                            <option value="Enugu">Enugu</option>
+                            <option value="Gombe">Gombe</option>
+                            <option value="Imo">Imo</option>
+                            <option value="Jigawa">Jigawa</option>
+                            <option value="Kaduna">Kaduna</option>
+                            <option value="Kano">Kano</option>
+                            <option value="Katsina">Katsina</option>
+                            <option value="Kebbi">Kebbi</option>
+                            <option value="Kogi">Kogi</option>
+                            <option value="Kwara">Kwara</option>
+                            <option value="Lagos">Lagos</option>
+                            <option value="Nassarawa">Nassarawa</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Ogun">Ogun</option>
+                            <option value="Ondo">Ondo</option>
+                            <option value="Osun">Osun</option>
+                            <option value="Oyo">Oyo</option>
+                            <option value="Plateau">Plateau</option>
+                            <option value="Rivers">Rivers</option>
+                            <option value="Sokoto">Sokoto</option>
+                            <option value="Taraba">Taraba</option>
+                            <option value="Yobe">Yobe</option>
+                            <option value="Zamfara">Zamfara</option>
+                        </select>
+                        
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center"><button type="submit" class="btn btn-danger" style="padding-left: 40px; padding-right:40px; margin-top:20px;">Submit</button></p>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p class="text-center">&copy; 2018 Involve Africa Initiative</p>
             </div>
         </div>
     </div>
