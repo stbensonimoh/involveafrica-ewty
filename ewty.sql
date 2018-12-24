@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 24, 2018 at 10:00 AM
+-- Generation Time: Dec 24, 2018 at 10:59 AM
 -- Server version: 5.7.24-0ubuntu0.18.04.1
 -- PHP Version: 7.2.13-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -35,6 +35,7 @@ CREATE TABLE `ewty` (
   `gender` text NOT NULL,
   `age` int(2) NOT NULL,
   `state` text NOT NULL,
+  `uniqueNumber` int(4) UNSIGNED ZEROFILL NOT NULL,
   `created_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -47,7 +48,8 @@ CREATE TABLE `ewty` (
 --
 ALTER TABLE `ewty`
   ADD PRIMARY KEY (`id`),
-  ADD UNIQUE KEY `email` (`email`);
+  ADD UNIQUE KEY `email` (`email`),
+  ADD UNIQUE KEY `uniqueNumber` (`uniqueNumber`);
 
 --
 -- AUTO_INCREMENT for dumped tables
