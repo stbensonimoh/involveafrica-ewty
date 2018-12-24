@@ -67,7 +67,6 @@ if ($usercheckquery->rowCount() > 0) {
         $url = 'https://www.bulksmsnigeria.com/api/v1/sms/create';
         $from = 'InvolveAfri';
         $body = "Hello {$firstName} {$lastName}. Thank you for registering as a participant at our forthcoming event - 'An Evening With the Youth' holding at the Shell Hall, Muson Center, Lagos on the 9th of February 2019 by 4pm. We look forward to seeing you there.";
-        $token = '3bzWyASahw61zV0s3TT2oYQnbiJ1EcM9mm5g6QArpKm8Ubv7w8aMf7iHbkh8';
         $myvars = 'api_token=' . $smstoken . '&from=' . $from . '&to=' . $phone . '&body=' . $body;
         //start CURL
         // create curl resource
