@@ -59,9 +59,10 @@ $(document).ready(function () {
             let email = $.trim(document.getElementById('email').value);
             let phone = $.trim(document.getElementById('phone').value);
             let gender = document.querySelector('input[name="gender"]:checked').value;
+            let age = document.getElementById('age').value;
             let state = document.getElementById('state').value;
 
-            let dataString = `firstName=${firstName}&lastName=${lastName}&email=${email}&phone=${phone}&gender=${gender}&state=${state}`;
+            let dataString = `firstName=${firstName}&lastName=${lastName}&email=${email}&phone=${phone}&gender=${gender}&age=${age}&state=${state}`;
 
             // Check to See if the user has already done the survey
             $.ajax({
