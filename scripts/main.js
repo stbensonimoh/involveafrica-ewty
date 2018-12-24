@@ -75,10 +75,10 @@ $(document).ready(function () {
                             window.location = '//involveafri.org';
                         }, 3000);
                     } else if (result == 'success') {
-                        swal("Submission Successful", "Your survey was successfully submitted.", "success");
+                        swal("Event Registration Successful", "You have successfully registered for the event.", "success");
                         setTimeout(function () {
                             window.location = '//involveafri.org';
-                        });
+                        }, 4000);
                     }
                 }
             });
