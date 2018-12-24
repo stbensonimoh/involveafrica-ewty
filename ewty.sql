@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Dec 23, 2018 at 11:22 PM
+-- Generation Time: Dec 24, 2018 at 10:00 AM
 -- Server version: 5.7.24-0ubuntu0.18.04.1
 -- PHP Version: 7.2.13-1+ubuntu18.04.1+deb.sury.org+1
 
@@ -33,6 +33,7 @@ CREATE TABLE `ewty` (
   `email` varchar(50) NOT NULL,
   `phone` varchar(15) NOT NULL,
   `gender` text NOT NULL,
+  `age` int(2) NOT NULL,
   `state` text NOT NULL,
   `created_date` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
