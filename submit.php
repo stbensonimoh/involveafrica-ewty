@@ -42,9 +42,10 @@ $conn = new PDO($dsn, $username, $password);
     //Execute the Count Query
     $userCountQuery->execute();
     //Fetch the Result
-    $countNumber = $userCountQuery->fetchColumn();
+    $countNumber = $userCountQuery->fetch(PDO::FETCH_ASSOC);
+    $countreal = $countNumber['count'];
     //Increment it and create the $uniqueNumber
-    $uniqueNumber = $countNumber + 1;
+    $uniqueNumber = $countreal + 1;
 
 // Check to see if the user is in the database already
 $usercheck = "SELECT * FROM ewty WHERE email=?";
